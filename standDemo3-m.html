@@ -1,0 +1,29 @@
+<!DOCTYPE HTML> 
+<html class="loading" >
+    <head>
+        <meta charset="utf-8" />
+        <!--允许全屏-->
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="yes" name="apple-touch-fullscreen" />
+        <meta content="telephone=no,email=no" name="format-detection" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="http://g.tbcdn.cn/tm/review-m/1.0.0/appendrate.css">
+        <title>追加评论</title>
+    </head>
+<body>
+    <div class="bottombar" >
+        <span class="btn-major J_Submit" href="#" >提交评论</span>
+    </div>
+    <div class="mainsize dealtime" >
+        <em>成交时间 <span class="J_GmtTradeFinished" ></span></em>
+    </div>
+    <form id="J_MainList" onsubmit="return false" ></form>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.1/seed-min.js" replace="LIB:kissy" ></script>
+    <script type="text/javascript" src="http://g.tbcdn.cn/mtb/??lib-mtop/0.5.13/mtop.js,lib-login/0.2.9/login.js,lib-mtop/0.5.13/logined.js" replace="LIB:mtop-login" ></script> 
+    <script src="http://g.tbcdn.cn/tm/review-m/1.0.0/combo.js" ></script>
+    <script>
+        KISSY.config({ combine:true });
+        KISSY.use("src/appendrate");
+    </script>
+</body>
+</html>

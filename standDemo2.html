@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- kissy 1.4.1 -->
+    <script src="http://g.tbcdn.cn/??kissy/k/1.4.1/seed-min.js,mui/seed/1.3.1/seed.js,mui/seed-g/1.0.6/seed.js,mui/globalmodule/1.3.14/global-module.js,mui/global/1.2.14/global.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://g.tbcdn.cn/??mui/global/1.2.14/global.css">
+
+    <script src="http://g.tbcdn.cn/tm/review/1.0.0/seed.js"></script>
+
+<style type="text/css" charset="utf-8">
+    
+        body{padding: 0;margin: 0;}
+        .wrap-w100{min-height: 900px; width: 100%; background: none;overflow: hidden; padding-top: 20px;
+            font: 12px/1.5 tahoma,arial,\5b8b\4f53;
+        }
+        /*.wrap-w100 h3{text-align: center; height: 30px;}*/
+        .body-w950{width: 950px; min-height:30px; *height:30px;
+            margin: 20px auto; *margin: 20px auto; background:#eee;}
+        .body-w750{width: 750px; min-height:30px; *height:30px;
+            margin: 20px auto; *margin: 20px auto; background:#eee;}
+        #SV_Review{min-height: 90px;*height: 90px;}
+        
+        .body-w843{
+            width: 843px; min-height:30px; 
+            margin: 20px auto; background:#eee;
+        }
+        .body-w990{
+            width: 990px; min-height:30px; 
+            margin: 20px auto; background:none;
+        }
+    </style>
+
+<style type="text/css">/*uploader style*/</style>
+
+<body>
+
+<div class="wrap-w100">
+<h3>输入框计数器demo</h3>
+<div class="body-w990 clearfix rate-w990" id ="demoHolder">
+    <div class="showholder"> 我是原来的元素</div>
+</div>
+
+
+
+</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    
+    KISSY.config({debug:true});
+
+    KISSY.use('review/waitlist,dom',function(S,WaitList,DOM){
+
+        KISSY.use('review/test/waitdata',function (S,Data) {
+
+            WaitList.render(Data.waiting,DOM.get('.showholder'))
+        })
+
+    });
+
+</script>
